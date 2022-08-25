@@ -1,0 +1,20 @@
+.num{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1.6rem;
+    &__column{
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid $color-anti-flash-white1;
+        &--title{
+            font-family: $canvas-black-text;
+            font-size: $font-size-xxxl;
+            padding: 1.6rem;
+        }
+        &--paragraph{
+            font-size: $font-size-xxsm;
+            font-family: $century-gothic-regular-text;
+            padding-left: 1.6rem;
+        }
+    }
+}

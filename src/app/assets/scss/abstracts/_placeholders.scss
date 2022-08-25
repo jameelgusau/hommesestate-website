@@ -1,0 +1,46 @@
+@font-face {
+    font-family: $canvas-regular-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/MADE_Canvas_Regular.otf") format("truetype");
+  }
+  @font-face {
+    font-family: $canvas-light-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/MADE_Canvas_Light.otf") format("truetype");
+  }
+    
+  @font-face {
+    font-family: $canvas-black-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/MADE_Canvas_Black.otf") format("truetype");
+  }
+    
+  @font-face {
+    font-family: $century-gothic-italic-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/GOTHICI.TTF") format("truetype");
+  }
+  
+  @font-face {
+    font-family: $century-gothic-bold-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/GOTHICB.TTF") format("truetype");
+  }
+  @font-face {
+    font-family: $century-gothic-regular-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/GOTHIC.TTF") format("truetype");
+  }
+  
+  @font-face {
+    font-family: $century-gothic-bold-italic-text;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../fonts/GOTHICBI.TTF") format("truetype");
+  }

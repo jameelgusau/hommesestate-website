@@ -1,0 +1,86 @@
+.carousel{
+    max-width: 50vw;
+    &__card-container{
+        display: grid;
+        align-items: center;
+        height: 45rem;
+        // padding: 3rem;
+
+        // background-color: #cccccc;
+        &__card{
+            background-color: $color-anti-flash-white2;
+            // width: 8rem;
+            height: 26.1rem;
+            // width: 30rem;
+            border-radius: 3rem;
+            display: grid;
+            grid-template-columns: 17.4rem 1fr;
+            align-items: center;
+            &--image{
+                width: 100%;
+                height: 26rem;
+                border-radius: 3rem;
+                border: 0.5rem solid $color-white;
+            }
+        }
+    }
+    &__card-text{
+        padding: 2.5rem;
+        &--title{
+            font-family: $century-gothic-bold-text;
+            font-size: $font-size-xl;
+        }
+        &--description{
+            font-family: $century-gothic-regular-text;
+            font-size: $font-size-m;
+            margin: 2rem 0;
+        }
+        &--rank{
+            font-family: $century-gothic-regular-text;
+            font-size: $font-size-sm;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        max-width: 100vw;
+        &__card-container{
+            height: fit-content;
+            &__card{
+                height: fit-content; 
+            }
+        }
+        &__card-text{
+            padding: 1.5rem;
+            &--title{
+                font-size: $font-size-l; 
+            }
+            &--description{
+                font-size: $font-size-xsm;
+                margin: 1rem 0;
+            }
+
+        }
+    }
+}
+.carousel-btn{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    &--button{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-white;
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            border: 1px solid $color-anti-flash-white1;
+            transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+            
+            &:hover {
+              background: $color-tawny;
+              color: $color-white;
+            }
+
+    }
+}

@@ -1,0 +1,74 @@
+.footer{
+    width: 100%;
+    max-width: 101.6rem;
+    background-color: $color-white;
+    margin: 0px auto;
+    @media screen and (max-width: 960px) {
+        padding: 0 2rem;
+        text-align: center;
+    }
+}
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+    align-items: center;
+    padding: 5rem 0;
+    border-top: 1px solid $color-anti-flash-white2;
+    &__logo{
+        &--img{
+            width: 25rem;
+            height: 7.4rem;
+        }
+    }
+    &__agents, &__contacts{
+        padding-right: 1rem;
+        &--title{
+            font-size: $font-size-xl;
+           
+            margin-bottom: 2rem;
+        }
+        &--description{
+            font-family: $century-gothic-regular-text;
+            font-size: $font-size-m;
+            & ul >li{
+                display: flex;
+                // justify-content: center;
+                padding: .5rem;
+                align-items: center;
+                gap: 2rem;
+            }
+        }
+    }
+}
+.footer-section1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+    align-items: center;
+    padding: 5rem 0;
+    border-top: 1px solid $color-anti-flash-white2;
+    &--title{
+        font-family: $century-gothic-regular-text;
+        font-size: $font-size-m;
+        color: #4B4B4B;
+    }
+    &__terms, &__social{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 2rem;
+        &--link{
+            font-family: $century-gothic-regular-text;
+            font-size: $font-size-m;
+            color: $color-black;
+            text-decoration: none;
+
+        }
+        &__social{
+            padding-right: 4rem;
+            &--link{
+                font-size: $font-size-xl;
+            }
+        }
+    }
+}

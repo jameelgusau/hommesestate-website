@@ -1,0 +1,118 @@
+.radio-container {
+  background: $color-white;
+  padding: 1.6rem;
+  display: table;
+  /* border-radius: 3px; */
+  border-radius: 0.8rem 0.8rem 0 0;
+  /* box-shadow: 4px 3px 99px #00000014; */
+  /* position: relative; */
+  & input {
+    width: auto;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    padding: 4px 8px;
+    background: $color-white;
+    color: $color-black;
+    font-size: 14px;
+    font-family: $century-gothic-bold-text ;
+    transition: all 100ms linear;
+    &:checked {
+      background: $color-white;
+      color: $color-tawny;
+      border: none;
+      /* box-shadow: 0 1px 1px #0000002e; */
+    }
+    &:focus {
+      background: $color-white;
+      border: none;
+    }
+    &:before {
+      content: attr(label);
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+.search{
+    // position: absolute;
+    // bottom: 18rem;
+    // // width: 70rem;
+    // gap: 2rem;
+    // grid-column: span 2;
+    // grid-row: span 2;
+    max-width: 75rem;
+
+}
+.vr {
+  width: 1px;
+  display: table-cell;
+  background-color:  $color-anti-flash-white1;
+}
+.select-container{
+    background-color: $color-white;
+    border-radius: 0 0.8rem 0.8rem 0.8rem;
+    display: flex;
+    gap: 2rem;
+    // justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    &__column{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       gap: 1rem; 
+
+    }
+    // &_button{
+
+    // }
+}
+.select-label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: $font-size-xsm;
+    color: #4B4B4B;
+}
+.search-btn{
+    background: $color-tawny;
+    border-radius: 50%;
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-m;
+    color: $color-white;
+   }
+
+.select-colums{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    gap: 1.5rem;
+   flex-grow: 1;
+   @media screen and (max-width: 960px) {
+    display: block;
+
+   }
+
+}
+.select{
+    border-radius: 0.5rem;
+    border: 2px solid $color-anti-flash-white1;
+    padding: 1rem;
+       @media screen and (max-width: 960px) {
+        margin-bottom: 2rem;
+       }
+    // width: 20rem;
+}

@@ -1,0 +1,37 @@
+.pcard{
+    max-width: 300px;
+    margin: auto;
+    border-radius: .9rem;
+    &__image{
+        width: 100%;
+        border-radius: .8rem .8rem 0 0;
+    }
+    &__body{
+        border: 1px solid $color-anti-flash-white1;
+        border-top: none;
+        border-radius: 0 0 0.8rem 0.8rem;
+        &--title{
+            font-size: $font-size-m;
+            padding: 2rem;
+            color: $color-light-gray;
+        }
+        &--con{
+            display: flex;
+            font-family: $century-gothic-regular-text;
+            justify-content: space-between;
+            padding: 0 2rem 2rem;
+        }
+    
+    }
+    &__btn{
+        color: $color-tawny;
+        border: none;
+        border-top:  1px solid $color-anti-flash-white1;
+        background-color: $color-white;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        padding: $font-size-xxsm ;
+        font-size: $font-size-xxsm;
+    }
+}

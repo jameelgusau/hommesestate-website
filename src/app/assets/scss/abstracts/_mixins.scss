@@ -1,0 +1,62 @@
+@mixin anim($anim) {
+    -webkit-animation: $anim;
+    animation: $anim;
+  }
+  @mixin b-s($shadows...) {
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+  }
+  @mixin s($select) {
+    -webkit-user-select: $select;
+    -moz-user-select: $select;
+    -ms-user-select: $select;
+    user-select: $select;
+  }
+  @mixin trans($anim...) {
+    -o-transition: $anim;
+    -ms-transition: $anim;
+    -moz-transition: $anim;
+    -webkit-transition: $anim;
+    transition: $anim;
+  }
+  @mixin transY($scale) {
+    -o-transform: scaleY($scale);
+    -ms-transform: scaleY($scale);
+    -moz-transform: scaleY($scale);
+    -webkit-transform: scaleY($scale);
+    transform: scaleY($scale);
+  }
+  @mixin box-shadow($x, $y, $blur, $c){ 
+    -webkit-box-shadow: $x $y $blur $c;
+    -moz-box-shadow: $x $y $blur $c;
+    -ms-box-shadow: $x $y $blur $c;
+    box-shadow: $x $y $blur $c;
+  }
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == phone{
+        @media (max-width: 37.5em) {
+            @content
+       };  
+    }//600px
+    @if $breakpoint == tab-port{
+        @media (max-width: 56.25em) {
+            @content
+       };  
+    }//900px
+    @if $breakpoint == tab-land{
+        @media (max-width: 75em) {
+            @content 
+       };  
+    }//1200
+    @if $breakpoint == big-desktop{
+        @media (min-width: 112.5em) {
+            @content
+       };  
+    }//1800
+    @if $breakpoint == desktop{
+        @media (max-width: 112.5em) {
+            @content
+       };  
+    }//
+}

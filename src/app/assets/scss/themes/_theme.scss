@@ -1,0 +1,12 @@
+
+.container_subtitles{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    border-top: 1px solid $color-anti-flash-white2;
+    &__subtitle{
+        text-align: center;
+        font-size: $font-size-xxxl;
+        margin-bottom: 3rem;
+    }
+}
