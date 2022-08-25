@@ -10,7 +10,7 @@ import andela from "../../app/assets/image/andela-logo.png";
 import contrix from "../../app/assets/image/constrix-logo.png";
 import PropertyCard from "../cards/PropertyCard";
 // import AnimationNumbers from "../num-animation";
-import CardCarousel from "../carousels/CardCarousel";
+// import CardCarousel from "../carousels/CardCarousel";
 import SearchComponent from "../search";
 
 const Home = () => {
@@ -169,7 +169,7 @@ const Home = () => {
       </div> */}
       <div className="home__trusted">
         <h3 className="home__trusted--title">
-          Trusted by companies nationwide.
+          Some of our clients.
         </h3>
         <div className="home__trusted__logos">
           <img src={stetis} alt="stetis" className="home__contact__img" />
@@ -178,10 +178,10 @@ const Home = () => {
           <img src={contrix} alt="contrix" className="home__contact__img" />
         </div>
       </div>
-      <div className="home__remarks">
+      {/* <div className="home__remarks">
         <h3 className="home__remarks--title">What people say about us.</h3>
         <CardCarousel />
-      </div>
+      </div> */}
     </div>
   );
 };
