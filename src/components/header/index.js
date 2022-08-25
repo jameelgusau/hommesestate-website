@@ -121,7 +121,7 @@ const Header = () => {
                     // activeClassName="active"
                     // className="nav-links phn"
                     className={
-                      navbar ? "nav-links nav-links--black" : "nav-links phn btn"
+                      navbar ? "nav-links nav-links--black bdr phn" : "nav-links phn btn"
                     }
                     onClick={click ? handleClick : null}
                   >
@@ -137,7 +137,7 @@ const Header = () => {
                     // activeClassName="active"
                     // className="nav-links btn"
                     className={
-                      navbar ? "nav-links nav-links--black" : "nav-links btn"
+                      navbar ? "nav-links nav-links--black bdr" : "nav-links btn"
                     }
                     onClick={click ? handleClick : null}
                    
