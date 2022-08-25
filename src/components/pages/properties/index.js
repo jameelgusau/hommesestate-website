@@ -9,7 +9,7 @@ const Properties = () => {
       <div className="properties">
         <div className="properties__header">
           <h3 className="properties__header--title">
-            The Fusion Plaza, Block B
+            The Fusion Plaza
           </h3>
         </div>
         <div className="properties__img">
@@ -36,13 +36,14 @@ const Properties = () => {
           <div className="properties-description">
             <h4 className="properties-description--title">Description</h4>
             <p className="properties-description--detail">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut. labore. et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud. exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            Fusion plaza is a 90-unit plaza the firm developed and sold on off-plan basis per unit. The plaza is designed to be a flexible simple modern office/business suite adequately equipped with standard amenities to meet with the accommodation needs of any class of business. The sizes are very flexible irrespective of the already existing dimensions on plan. The plaza offers steady electricity, neat ambience, a functional elevator, good spaces, excellent reticulation etc., with an all-round visibility for businesses and offices situated in it.
             </p>
             <h4 className="properties-description--title">Location</h4>
-            <p className="properties-description--detail">Wuse, Zone 3</p>
+            <p className="properties-description--detail">Wuye district, Abuja</p>
+            <h4 className="properties-description--title">Property type</h4>
+            <p className="properties-description--detail">Commercial (Shops & office Suite)</p>
+            <h4 className="properties-description--title">Total Units</h4>
+            <p className="properties-description--detail">90</p>
             <h4 className="properties-description--title">Units Available</h4>
             <p className="properties-description--detail">10</p>
           </div>
