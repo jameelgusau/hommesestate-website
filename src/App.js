@@ -11,7 +11,7 @@ import LandingLayout from "./components/LandingLayout";
 import PropertyLayout from "./components/PropertyLayout";
 import Loading from "./components/pages/Loading";
 
-const NotFound = lazy(() => import("./components/pages/notfound"));
+// const NotFound = lazy(() => import("./components/pages/notfound"));
 const Properties = lazy(() => import("./components/pages/properties"));
 
 function App() {
@@ -19,14 +19,14 @@ function App() {
     <Router>
       <Suspense fallback={<Loading />}>
         <Routes>
-          <Route path="/" element={<LandingLayout />}>
-            <Route index element={<Home />} />
+          <Route element={<LandingLayout />}>
+            <Route  path="/" element={<Home />} />
           </Route>
           <Route path="property" element={<PropertyLayout />}>
             <Route path=":id" element={<Properties />} />
           </Route>
-          <Route path="notfound" element={<NotFound />} />
-          <Route path="*" element={<Navigate to="notfound" replace />} />
+          {/* <Route path="notfound" element={<NotFound />} /> */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
     </Router>
