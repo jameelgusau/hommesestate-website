@@ -196,8 +196,9 @@
 
       &--paragraph{
         font-family: $century-gothic-regular-text;
-        font-size: $font-size-l;
+        font-size: $font-size-m;
         margin-bottom: 1rem;
+        margin-right:1rem ;
       }
       &--btn{
         background-color: $color-white;
@@ -221,10 +222,12 @@
     width: 100%;
     max-width: 120rem;
     margin: 0 auto;
-    height: 35rem;
+    // height: 35rem;
     padding: 3rem 6rem;
     display: grid;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     background: -webkit-linear-gradient(to left, $color-anti-flash-white2 30%, $color-white 30%);
     background: -o-linear-gradient(to left, $color-anti-flash-white2 30%,  $color-white 30%);

@@ -13,13 +13,13 @@ const Footer = () => {
         <div className="footer-section__logo">
           <img src={Logo} alt="logo" className="footer-section__logo--img" />
         </div>
-        <div className="footer-section__agents">
+        {/* <div className="footer-section__agents">
           <h1 className="footer-section__agents--title">Agents</h1>
           <p className="footer-section__agents--description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut.
           </p>
-        </div>
+        </div> */}
         <div className="footer-section__contacts" id="contact">
           <h1 className="footer-section__contacts--title">Contact</h1>
           <div className="footer-section__contacts--description">
